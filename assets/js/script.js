@@ -1,0 +1,1 @@
+console.log("Maré & Pearl loaded successfully!");
