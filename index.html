@@ -22,18 +22,20 @@
         </div>
 
         <ul class="nav-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Menu</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Gallery</a></li>
-            <li><a href="#">Reservations</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#reservations">Reservations</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <button id="theme-toggle">🌙</button>
         </ul>
     </div>
     </nav>
 
     <!-- Hero -->
-    <header class="hero">
+    <header id="home" class="hero">
 
     <div class="hero-content">
 
@@ -60,7 +62,8 @@
     </header>
 
     <!-- About -->
-    <section>
+    <section id="about" class="about hidden">
+
         <div class="container about-container">
 
         <div class="about-image">
@@ -96,7 +99,7 @@
     </section>
 
     <!-- Featured Menu -->
-    <section class="menu">
+    <section id="menu" class="menu hidden">
         <div class="container">
 
         <p class="section-subtitle">
@@ -155,24 +158,209 @@
     </section>
 
     <!-- Gallery -->
-    <section>
+    <section id="gallery" class="gallery hidden">
+        <div class="container">
+
+        <p class="section-subtitle">
+            Gallery
+        </p>
+
+        <h2 class="section-title">
+            Moments at Maré & Pearl
+        </h2>
+
+        <div class="gallery-grid">
+
+            <div class="gallery-item">
+                <img src="assets/images/gallery1.jpg" alt="Restaurant view">
+            </div>
+
+            <div class="gallery-item">
+                <img src="assets/images/gallery2.jpg" alt="Dining experience">
+            </div>
+
+            <div class="gallery-item">
+                <img src="assets/images/gallery3.jpg" alt="Coffee">
+            </div>
+
+            <div class="gallery-item">
+                <img src="assets/images/gallery4.jpg" alt="Ocean seating">
+            </div>
+
+        </div>
+
+    </div>
 
     </section>
 
     <!-- Testimonials -->
-    <section>
+    <section id="testimonials" class="testimonials hidden">
+
+        <div class="container">
+
+        <p class="section-subtitle">
+            Testimonials
+        </p>
+
+        <h2 class="section-title">
+            What Our Guests Say
+        </h2>
+
+        <div class="testimonial-grid">
+
+            <div class="testimonial-card">
+
+                <div class="stars">★★★★★</div>
+
+                <p>
+                    "The seafood was exceptional, the service was impeccable,
+                    and the sunset made it one of the most memorable evenings
+                    we've ever had."
+                </p>
+
+                <h3>Sarah M.</h3>
+
+            </div>
+
+            <div class="testimonial-card">
+
+                <div class="stars">★★★★★</div>
+
+                <p>
+                    "Beautiful atmosphere, amazing coffee and the friendliest
+                    staff. Maré & Pearl has become our favourite weekend spot."
+                </p>
+
+                <h3>Daniel K.</h3>
+
+            </div>
+
+            <div class="testimonial-card">
+
+                <div class="stars">★★★★★</div>
+
+                <p>
+                    "Everything felt luxurious without being overwhelming.
+                    We'll definitely be returning soon!"
+                </p>
+
+                <h3>Emily R.</h3>
+
+            </div>
+
+        </div>
+
+    </div>
+
 
     </section>
 
     <!-- Reservation -->
-    <section>
+    <section id="reservations" class="reservation hidden">
+
+        <div class="container">
+
+        <p class="section-subtitle">
+            Reservations
+        </p>
+
+        <h2 class="section-title">
+            Reserve Your Table
+        </h2>
+
+        <form class="reservation-form">
+
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" placeholder="John Smith">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" placeholder="john@email.com">
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" placeholder="+27 82 123 4567">
+            </div>
+
+            <div class="form-group">
+                <label for="guests">Number of Guests</label>
+                <input type="number" id="guests" placeholder="2">
+            </div>
+
+            <div class="form-group">
+                <label for="date">Reservation Date</label>
+                <input type="date" id="date">
+            </div>
+
+            <div class="form-group">
+                <label for="time">Reservation Time</label>
+                <input type="time" id="time">
+            </div>
+
+            <div class="form-group full-width">
+                <label for="requests">Special Requests</label>
+
+                <textarea
+                    id="requests"
+                    rows="5"
+                    placeholder="Anniversary, birthday, allergies, window seat..."
+                ></textarea>
+            </div>
+
+            <button type="submit" class="hero-button">
+                Reserve Now
+            </button>
+
+        </form>
+
+    </div>
 
     </section>
 
     <!-- Footer -->
-    <footer>
+    <footer id="contact" class="footer hidden">
+        <div class="container">
+
+        <h2>Maré & Pearl</h2>
+
+        <p>
+            Luxury Coastal Café & Restaurant
+        </p>
+
+        <p>
+            Cape Town, South Africa
+        </p>
+
+        <p>
+            +27 21 555 1234
+        </p>
+
+        <p>
+            reservations@mareandpearl.com
+        </p>
+
+        <ul class="footer-links">
+
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Reservations</a></li>
+
+        </ul>
+
+        <p class="copyright">
+            © 2026 Maré & Pearl. Crafted with passion by Kae.
+        </p>
+
+    </div>
 
     </footer>
+    <button id="topBtn" title="Back to Top">
+    ↑
+</button>
 
     <script src="assets/js/script.js"></script>
 
