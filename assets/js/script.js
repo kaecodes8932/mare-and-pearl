@@ -53,3 +53,16 @@ topButton.addEventListener("click", function () {
     });
 
 });
+// Reservation Date
+
+const reservationDate = document.querySelector("#date");
+
+const today = new Date();
+
+const year = today.getFullYear();
+
+const month = String(today.getMonth() + 1).padStart(2, "0");
+
+const day = String(today.getDate()).padStart(2, "0");
+
+reservationDate.min = `${year}-${month}-${day}`;

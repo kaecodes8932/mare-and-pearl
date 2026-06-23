@@ -599,3 +599,142 @@ body.dark-mode textarea::placeholder {
     background-color: #B18E56;
     transform: translateY(-4px) scale(1.05);
 }
+/* ==========================
+   Menu Navigation
+========================== */
+
+.menu-nav {
+    background: #ffffff;
+    padding: 25px 0;
+    border-bottom: 1px solid #e8e1d9;
+
+    position: sticky;
+    top: 80px;
+    z-index: 900;
+}
+
+.menu-nav .container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+.menu-nav a {
+    text-decoration: none;
+    color: #3D2B1F;
+    font-weight: 500;
+    padding: 12px 22px;
+    border-radius: 30px;
+    transition: .3s;
+}
+
+.menu-nav a:hover {
+    background: #C9A66B;
+    color: white;
+}
+/* ==========================
+   Menu Hero
+========================== */
+
+.menu-hero {
+    background: linear-gradient(rgba(11,31,51,0.65),
+                rgba(11,31,51,0.65)),
+                url("../images/menu-hero.jpg");
+
+    background-size: cover;
+    background-position: center;
+}
+/* ==========================
+   Menu Sections
+========================== */
+
+.menu-section {
+    padding: 90px 0;
+    background: #F8F5F2;
+}
+
+.menu-section:nth-child(even) {
+    background: #FFFFFF;
+}
+
+.menu-intro {
+    max-width: 700px;
+    margin: 20px auto 60px;
+    text-align: center;
+    color: #6A5D52;
+    line-height: 1.8;
+}
+
+.menu-list {
+    max-width: 900px;
+    margin: auto;
+}
+
+.menu-item {
+    padding: 30px 0;
+    border-bottom: 1px solid #E6DDD5;
+}
+
+.menu-name-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.menu-name-price h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2rem;
+    color: #3D2B1F;
+}
+
+.menu-name-price span {
+    color: #C9A66B;
+
+    font-weight: 700;
+
+    font-size: 1.3rem;
+
+    white-space: nowrap;
+}
+
+.menu-item p {
+    color: #6A5D52;
+    line-height: 1.8;
+    max-width: 75%;
+}
+.menu-item:hover {
+
+    padding-left: 15px;
+
+}
+
+.chef-tag {
+
+    background: #C9A66B;
+
+    color: white;
+
+    padding: 5px 12px;
+
+    border-radius: 30px;
+
+    font-size: .65rem;
+
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
+
+    margin-left: 12px;
+
+}
+.section-title::after {
+    content: "";
+    display: block;
+    width: 90px;
+    height: 3px;
+    background: #C9A66B;
+    margin: 20px auto 0;
+    border-radius: 10px;
+}
